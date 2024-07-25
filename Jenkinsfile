@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        envProperties 'env.properties'
+        envProperties 'config.properties'
     }
 
     stages {
