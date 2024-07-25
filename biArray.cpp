@@ -1,4 +1,5 @@
 #include <iostream>
+#include "./include/arrayUtils.h"
 using namespace std;
 
 main()

@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Compile the C++ program
-RUN g++ -o biArray biArray.cpp
+RUN g++ -o biArray biArray.cpp ./include/arrayUtils.cpp
 
 # Run the program when the container starts
 CMD ["./biArray"]
