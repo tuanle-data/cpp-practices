@@ -19,7 +19,7 @@ pipeline {
                     @echo off
                     for /f "tokens=*" %%i in ('docker ps -q') do docker stop %%i
                     for /f "tokens=*" %%i in ('docker ps -qa') do docker rm %%i
-                    for /f "tokens=*" %%i in ('docker images -q') do docker rmi %%i
+                    docker rmi biarray-v1:latest
                 '''
             }
         }
